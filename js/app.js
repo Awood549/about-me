@@ -79,7 +79,7 @@ console.log(food);
 if (food.toLowerCase() === "yes") {
   alert("Nope, It's pretty basic of me but I love pizza. :)");
 }
-else {
+  else {
   alert("That's right! It's actually pizza because I'm basic like that.");
   correctGuess++
   console.log("Correct Guesses= " + correctGuess);
@@ -96,22 +96,22 @@ while(dogGuess !== "30"){
   if(dogGuess !== "30"){
   var dogGuess = prompt("How many dogs do you think I've owned?");
   }
-  if(dogGuess > "30"){
+  else if(dogGuess > "30"){
     alert("Nope! Too high.");
   }
-  if(dogGuess <= '15'){
+  else if(dogGuess <= '15'){
     alert("Woah! way too low");
   }
-  if(dogGuess < "30" && dogGuess > "15" && badGuess === "0"){
+  else if(dogGuess < "30" && dogGuess > "15" && badGuess === "0"){
     alert("Too low! Try again.");
   }
-  if(dogGuess <"30" && dogGuess > "15" && badGuess >"0"){
+  else if(dogGuess <"30" && dogGuess > "15" && badGuess >"0"){
     alert("Nope, still too low.");
   }
-  if(dogGuess === "30"){
+  else if(dogGuess === "30"){
     alert("Yep! I've owned at least 30 dogs");
   }   
-  if(badGuess === "3"){
+  else(badGuess === "3"){
     var dogGuess = "30"
     alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
   }
