@@ -12,8 +12,9 @@ figure{
     width:400px;
     border-color:rgb(45, 131, 98);
     display:center;
-    margin-left:auto;
-    margin-right:auto;
+    position:relative;
+    bottom:10px;
+    left:475px;
 }
 img{
     width:400px;
@@ -21,9 +22,25 @@ img{
 h1{
     text-align:center;
     text-shadow: 3px 3px rgb(61, 60, 60);
+    display:center;
+    position:relative;
+    right:10px;
 }
-ul{
-    text-align:center;
+/* ul{ */
+    /* text-align:center; */
+    /* display:block; */
+    /* list-style:none; 
+}*/
+.lists{
+    position:relative;
+    bottom:550px;
+    right:15px;
     display:block;
-    list-style:none;
+    text-shadow: 1px 1px rgb(61,60,60);
+    margin:10px;
+    font-size:20px;
+    width:350px;
+    padding:25px;
+    border-style:dashed;
+    border-color: greenyellow;
 }
