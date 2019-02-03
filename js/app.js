@@ -22,7 +22,7 @@ else {
 coding();
 
 //Q2 Money
-var money = prompt("Okay so review, am I going into the coding field for the money?");
+function money() {var money = prompt("Okay so review, am I going into the coding field for the money?");
 console.log(money);
 
 if (money.toLowerCase() === "no") {
@@ -33,9 +33,11 @@ else {
   correctGuess++
   console.log("Correct Guesses= " + correctGuess);
 }
+}
+money();
 
 //Q3 Animals
-var animals = prompt("Do I prefer cats or dogs?");
+function animals () {var animals = prompt("Do I prefer cats or dogs?");
 console.log(animals);
 
 if (animals.toLowerCase() === "dogs") {
@@ -47,6 +49,8 @@ if (animals.toLowerCase() === "dogs") {
 if (animals.toLowerCase() === "cats") {
   alert("No, I prefer dogs. but I was supposed to ask a yes or no question so let's try again");
 }
+}
+animals();
 
 //Q4 Animals pt2
 var dogs = prompt("Do I like dogs?");
