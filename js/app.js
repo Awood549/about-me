@@ -97,12 +97,9 @@ if (food.toLowerCase() === "yes") {
 }
 food();
 
-var age = prompt("how old am I?");
-console.log(age);
-
 //Q7 How many dogs have I owned?
 
-var badGuess = 0
+function dogsOwned() {var badGuess = 0
 
 while(dogGuess !== "30"){
   if(dogGuess !== "30"){
@@ -129,6 +126,8 @@ while(dogGuess !== "30"){
   }
   badGuess++
 }
+}
+dogsOwned();
 
 
 //Results prompts
