@@ -7,7 +7,7 @@ console.log(userName);
 
 prompt("Make sure to answer all questions with a yes or no");
 
-var enjoy = prompt("Do I enjoy coding?");
+function coding() {var enjoy = prompt("Do I enjoy coding?");
 console.log(enjoy);
 
 if (enjoy.toLowerCase() == "yes") {
@@ -18,6 +18,8 @@ if (enjoy.toLowerCase() == "yes") {
 else {
   alert("Nope, I really do enjoy it. What a challenge!")
 }
+}
+coding();
 
 //Q2 Money
 var money = prompt("Okay so review, am I going into the coding field for the money?");
@@ -111,7 +113,7 @@ while(dogGuess !== "30"){
   else if(dogGuess === "30"){
     alert("Yep! I've owned at least 30 dogs");
   }   
-  else(badGuess === "3"){
+  else(badGuess === "3"); {
     var dogGuess = "30"
     alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
   }
