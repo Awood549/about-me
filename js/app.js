@@ -53,7 +53,7 @@ if (animals.toLowerCase() === "cats") {
 animals();
 
 //Q4 Animals pt2
-var dogs = prompt("Do I like dogs?");
+function dog() {var dogs = prompt("Do I like dogs?");
 console.log(dogs);
 
 if (dogs.toLowerCase() === "yes") {
@@ -64,9 +64,11 @@ if (dogs.toLowerCase() === "yes") {
 else {
   alert("Okay, I definitely  prefer dogs because they're the best.");
 }
+}
+dog();
 
 //Q5 Video Games
-var games = prompt("Do I play video games?");
+function videogames(){var games = prompt("Do I play video games?");
 console.log(games);
 
 if (games.toLowerCase() === "yes") {
@@ -77,9 +79,11 @@ if (games.toLowerCase() === "yes") {
 else {
   alert("I do! I've been playing for years!");
 }
+}
+videogames();
 
 //Q6 Fav food
-var food = prompt("Is my favorite food carrots?");
+function food() {var food = prompt("Is my favorite food carrots?");
 console.log(food);
 
 if (food.toLowerCase() === "yes") {
@@ -90,6 +94,8 @@ if (food.toLowerCase() === "yes") {
   correctGuess++
   console.log("Correct Guesses= " + correctGuess);
 }
+}
+food();
 
 var age = prompt("how old am I?");
 console.log(age);
