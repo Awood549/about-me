@@ -7,7 +7,7 @@ console.log(userName);
 
 prompt("Make sure to answer all questions with a yes or no");
 
-var enjoy = prompt("Do I enjoy coding?");
+function coding() {var enjoy = prompt("Do I enjoy coding?");
 console.log(enjoy);
 
 if (enjoy.toLowerCase() == "yes") {
@@ -18,9 +18,11 @@ if (enjoy.toLowerCase() == "yes") {
 else {
   alert("Nope, I really do enjoy it. What a challenge!")
 }
+}
+coding();
 
 //Q2 Money
-var money = prompt("Okay so review, am I going into the coding field for the money?");
+function money() {var money = prompt("Okay so review, am I going into the coding field for the money?");
 console.log(money);
 
 if (money.toLowerCase() === "no") {
@@ -31,9 +33,11 @@ else {
   correctGuess++
   console.log("Correct Guesses= " + correctGuess);
 }
+}
+money();
 
 //Q3 Animals
-var animals = prompt("Do I prefer cats or dogs?");
+function animals () {var animals = prompt("Do I prefer cats or dogs?");
 console.log(animals);
 
 if (animals.toLowerCase() === "dogs") {
@@ -45,9 +49,11 @@ if (animals.toLowerCase() === "dogs") {
 if (animals.toLowerCase() === "cats") {
   alert("No, I prefer dogs. but I was supposed to ask a yes or no question so let's try again");
 }
+}
+animals();
 
 //Q4 Animals pt2
-var dogs = prompt("Do I like dogs?");
+function dog() {var dogs = prompt("Do I like dogs?");
 console.log(dogs);
 
 if (dogs.toLowerCase() === "yes") {
@@ -58,9 +64,11 @@ if (dogs.toLowerCase() === "yes") {
 else {
   alert("Okay, I definitely  prefer dogs because they're the best.");
 }
+}
+dog();
 
 //Q5 Video Games
-var games = prompt("Do I play video games?");
+function videogames(){var games = prompt("Do I play video games?");
 console.log(games);
 
 if (games.toLowerCase() === "yes") {
@@ -71,9 +79,11 @@ if (games.toLowerCase() === "yes") {
 else {
   alert("I do! I've been playing for years!");
 }
+}
+videogames();
 
 //Q6 Fav food
-var food = prompt("Is my favorite food carrots?");
+function food() {var food = prompt("Is my favorite food carrots?");
 console.log(food);
 
 if (food.toLowerCase() === "yes") {
@@ -84,13 +94,12 @@ if (food.toLowerCase() === "yes") {
   correctGuess++
   console.log("Correct Guesses= " + correctGuess);
 }
-
-var age = prompt("how old am I?");
-console.log(age);
+}
+food();
 
 //Q7 How many dogs have I owned?
 
-var badGuess = 0
+function dogsOwned() {var badGuess = 0
 
 while(dogGuess !== "30"){
   if(dogGuess !== "30"){
@@ -111,12 +120,14 @@ while(dogGuess !== "30"){
   else if(dogGuess === "30"){
     alert("Yep! I've owned at least 30 dogs");
   }   
-  else(badGuess === "3"){
+  else(badGuess === "3"); {
     var dogGuess = "30"
     alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
   }
   badGuess++
 }
+}
+dogsOwned();
 
 
 //Results prompts
