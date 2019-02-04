@@ -99,35 +99,34 @@ food();
 
 //Q7 How many dogs have I owned?
 
-<<<<<<< HEAD
 function dogsOwned() {
   var badGuess = 0
 
-  while(dogGuess !== "30"){
-    if(dogGuess !== "30"){
+  while(dogGuess !== 30){
     var dogGuess = prompt("How many dogs do you think I've owned?");
+    var guessInt = parseInt(dogGuess);
+  
+    if(badGuess === 3){
+      alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
+      break;
     }
-    if(dogGuess > "30"){
+  
+    if(dogGuess > 30){
       alert("Nope! Too high.");
     }
-    if(dogGuess <= '15'){
+    if(dogGuess <= 15){
       alert("Woah! way too low");
     }
-    if(dogGuess < "30" && dogGuess > "15" && badGuess === "0"){
+    if(dogGuess < 30 && dogGuess > 15 && badGuess === 0){
       alert("Too low! Try again.");
     }
-    if(dogGuess <"30" && dogGuess > "15" && badGuess >"0"){
+    if(dogGuess <30 && dogGuess > 15 && badGuess > 0){
       alert("Nope, still too low.");
     }
-    if(dogGuess === "30"){
+    if(dogGuess === 30){
       alert("Yep! I've owned at least 30 dogs");
-      correctGuess++;
     }   
-    if(badGuess === "3"){
-      var dogGuess = "30"
-      alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
-    }
-    badGuess++;
+    badGuess++
   }
 }
 dogsOwned();
@@ -146,32 +145,6 @@ while(guess < 6){
     alert("Yep! I've lived there!");
     correctGuess++;
     break;
-=======
-function dogsOwned() {var badGuess = 0
-
-while(dogGuess !== "30"){
-  if(dogGuess !== "30"){
-  var dogGuess = prompt("How many dogs do you think I've owned?");
-  }
-  else if(dogGuess > "30"){
-    alert("Nope! Too high.");
-  }
-  else if(dogGuess <= '15'){
-    alert("Woah! way too low");
-  }
-  else if(dogGuess < "30" && dogGuess > "15" && badGuess === "0"){
-    alert("Too low! Try again.");
-  }
-  else if(dogGuess <"30" && dogGuess > "15" && badGuess >"0"){
-    alert("Nope, still too low.");
-  }
-  else if(dogGuess === "30"){
-    alert("Yep! I've owned at least 30 dogs");
-  }   
-  else(badGuess === "3"); {
-    var dogGuess = "30"
-    alert("Okay, so the answer was 30. Yes I've had a lot of dogs.");
->>>>>>> 96517fcf89bedf71f3d98baf7bb626147424125a
   }
     else{
       alert("Nope, " + userName + " I haven't lived there.");
@@ -179,12 +152,7 @@ while(dogGuess !== "30"){
     }
 }
 }
-<<<<<<< HEAD
 placesLived();
-=======
-}
-dogsOwned();
->>>>>>> 96517fcf89bedf71f3d98baf7bb626147424125a
 
 
 //Results prompts
