@@ -133,7 +133,7 @@ dogsOwned();
 
 //Q8 Places Lived
 
-function placesLived(){var places = ["greenwood", "shoreline", "mountlake terrece", "mount lake", "mount lake terrece"];
+function placesLived(){var places = ["greenwood", "shoreline", "mountlake terrace", "mount lake", "mount lake terrace"];
 console.log(places);
 
 var guess = 0
