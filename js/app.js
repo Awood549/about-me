@@ -1,4 +1,5 @@
-'use strict'
+'use strict'; 
+
 var correctGuess = 0
 //Q1 Coding
 var userName = prompt("Before we get started, what is your name?");
